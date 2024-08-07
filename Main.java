@@ -77,7 +77,7 @@ public class Main {
             //se inicia el juego
             juego.repartirCartasIniciales();
             System.out.println("Mano inicial de " + juego.getJugador().getNombre() + ": " + juego.getJugador().getMano());
-            System.out.println("Mano inicial del dealer: " + juego.getDealer().getMano());
+            System.out.println("Mano inicial del dealer: " + juego.getDealer().getManoD());
 
             //menu para que el usuario decida pedri carta o quedarse, si se excede del limite, perdera
             boolean continuar = true;
@@ -107,7 +107,7 @@ public class Main {
             //si el jugador se queda y está dentro del limite, el dealer juega su turno
             if (juego.getJugador().estaDentroDelLimite()) {
                 juego.jugarTurnoDealer();
-                System.out.println("Mano final del dealer: " + juego.getDealer().getMano());
+                System.out.println("Mano final del dealer: " + juego.getDealer().getManoD());
             }
 
             //menu por si el usuario desea jugar de nuevo o retirase al menu principal

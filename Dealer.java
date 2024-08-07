@@ -17,7 +17,7 @@ public class Dealer {
     }
 
     //metodo para obtener el valor de la suma de la mano del dealer
-    public int valorMano() {
+    public int valorManoD() {
         int valor = 0;
         for (int carta : mano) {
             valor += carta;
@@ -27,10 +27,10 @@ public class Dealer {
 
     //metodo para verificar que el valor de la mano está entre 21
     public boolean estaDentroDelLimite() {
-        return valorMano() <= 21;
+        return valorManoD() <= 21;
     }
 
-    public List<Integer> getMano() {
+    public List<Integer> getManoD() {
         return mano;
     }
 }
